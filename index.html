@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe — Portfolio</title>
+  <meta name="description" content="Portfolio of Jane Doe, a Mechanical Engineering student building robotics, automation, and embedded systems projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jane Doe — Portfolio" />
+  <meta property="og:description" content="Portfolio of Jane Doe, a Mechanical Engineering student building robotics, automation, and embedded systems projects." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Jane Doe — Portfolio" />
+  <meta name="twitter:description" content="Portfolio of Jane Doe, a Mechanical Engineering student building robotics, automation, and embedded systems projects." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="avatar" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="8" r="4" fill="currentColor" />
+          <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="currentColor" />
+        </svg>
+      </div>
+      <div class="header-text">
+        <h1>Jane Doe</h1>
+        <p class="bio">Mechanical Engineering student building <span class="highlight">robotics</span> and <span class="highlight">automation</span> projects.</p>
+      </div>
+      <div class="header-actions">
+        <button
+          id="print-button"
+          class="icon-button"
+          type="button"
+          aria-label="Print or save as PDF"
+          title="Print or save as PDF"
+        >
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2M6 14h12v7H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button
+          id="theme-toggle"
+          class="icon-button"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Switch to dark mode"
+        >
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden>
+            <circle cx="12" cy="12" r="4" fill="currentColor" />
+            <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab-btn active" data-tab="about" role="tab" aria-selected="true">About</button>
+      <button class="tab-btn" data-tab="projects" role="tab" aria-selected="false">Projects</button>
+      <button class="tab-btn" data-tab="experience" role="tab" aria-selected="false">Experience</button>
+    </nav>
+
+    <main class="content">
+      <section id="about" class="tab-panel" role="tabpanel">
+        <h2>About Me</h2>
+        <p>
+          I'm a third-year <span class="highlight">Mechanical Engineering</span> student passionate about
+          designing systems that solve real-world problems. My focus areas include
+          <span class="highlight">robotics</span>, <span class="highlight">CAD modeling</span>, and
+          <span class="highlight">embedded systems</span>.
+        </p>
+        <p>
+          Outside of coursework, I enjoy competing in design competitions and contributing to
+          open-source hardware projects. I'm currently looking for
+          <span class="highlight">internship opportunities</span> for Summer 2027.
+        </p>
+        <ul class="skill-list">
+          <li><span class="highlight">SolidWorks</span> <span class="caption">CAD &amp; simulation</span></li>
+          <li><span class="highlight">Python &amp; MATLAB</span> <span class="caption">data analysis &amp; control systems</span></li>
+          <li><span class="highlight">Arduino / Embedded C</span> <span class="caption">prototyping</span></li>
+        </ul>
+      </section>
+
+      <section id="projects" class="tab-panel" role="tabpanel" hidden>
+        <h2>Projects</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Autonomous Line-Following Robot</h3>
+            <p class="caption">Arduino · C++ · Sensors</p>
+            <p>Designed and built a robot capable of <span class="highlight">autonomous navigation</span> using infrared sensors and a closed-loop PID controller.</p>
+          </article>
+          <article class="card">
+            <h3>3D-Printed Prosthetic Hand</h3>
+            <p class="caption">SolidWorks · 3D Printing · Servo Control</p>
+            <p>Designed a low-cost prosthetic hand prototype with <span class="highlight">5 independently actuated fingers</span>, reducing material cost by 40%.</p>
+          </article>
+          <article class="card">
+            <h3>Thermal Efficiency Simulation</h3>
+            <p class="caption">MATLAB · Heat Transfer Modeling</p>
+            <p>Built a simulation modeling <span class="highlight">heat dissipation</span> in compact electronics enclosures to inform design improvements.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="tab-panel" role="tabpanel" hidden>
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Engineering Intern <span class="caption">— Acme Manufacturing, Summer 2025</span></h3>
+            <p>Assisted in <span class="highlight">process optimization</span> on the production line, reducing cycle time by 12%.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Undergraduate Research Assistant <span class="caption">— University Robotics Lab, 2024–Present</span></h3>
+            <p>Contribute to research on <span class="highlight">soft robotics actuators</span> under faculty supervision.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>B.S. Mechanical Engineering <span class="caption">— State University, Expected 2027</span></h3>
+            <p>Relevant coursework: <span class="highlight">Dynamics</span>, <span class="highlight">Thermodynamics</span>, <span class="highlight">Controls</span>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © 2026 Jane Doe ·
+        <span class="contact-email">
+          <a href="mailto:jane.doe@example.com">jane.doe@example.com</a>
+          <button
+            type="button"
+            class="copy-email-btn"
+            data-email="jane.doe@example.com"
+            aria-label="Copy email address"
+            title="Copy email address"
+          >
+            <svg class="icon-copy" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="8" y="8" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6" />
+              <path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3" stroke="currentColor" stroke-width="1.6" />
+            </svg>
+            <svg class="icon-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden>
+              <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <span class="copy-feedback" role="status" aria-live="polite"></span>
+        </span>
+        · <a href="#">LinkedIn</a> · <a href="#">GitHub</a>
+      </p>
+    </footer>
+  </div>
+
+  <button
+    id="back-to-top"
+    class="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+  >
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
