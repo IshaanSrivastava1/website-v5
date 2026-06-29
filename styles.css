@@ -196,6 +196,10 @@ body {
   gap: 20px;
 }
 
+.recent-grid {
+  margin-bottom: 40px;
+}
+
 .card {
   border: 1px solid var(--border);
   border-radius: 10px;
