@@ -169,6 +169,10 @@ body {
   margin: 0 0 16px;
 }
 
+.tab-panel h2:not(:first-of-type) {
+  margin-top: 40px;
+}
+
 .caption {
   color: var(--muted);
   font-size: 13px;
@@ -194,10 +198,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-}
-
-.recent-grid {
-  margin-bottom: 40px;
 }
 
 .card {
@@ -241,6 +241,18 @@ body {
 
 .timeline-item p {
   margin: 0;
+  font-size: 14px;
+}
+
+.bullet-list {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bullet-list li {
   font-size: 14px;
 }
 
