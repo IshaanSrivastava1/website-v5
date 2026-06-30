@@ -17,43 +17,57 @@
 <body>
   <div class="page">
     <header class="header">
-      <div class="avatar" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="8" r="4" fill="currentColor" />
-          <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="currentColor" />
-        </svg>
+      <div class="header-top">
+        <div class="avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="8" r="4" fill="currentColor" />
+            <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="header-text">
+          <h1>Ishaan Srivastava</h1>
+        </div>
+        <div class="header-actions">
+          <button
+            id="print-button"
+            class="icon-button"
+            type="button"
+            aria-label="Print or save as PDF"
+            title="Print or save as PDF"
+          >
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2M6 14h12v7H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button
+            id="theme-toggle"
+            class="icon-button"
+            type="button"
+            aria-label="Switch to dark mode"
+            title="Switch to dark mode"
+          >
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden>
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="header-text">
-        <h1>Ishaan Srivastava</h1>
-        <p class="bio">Supply Chain Analyst at <span class="highlight">Aramark</span>, building <span class="highlight">automation</span> and <span class="highlight">AI-assisted</span> side projects.</p>
-      </div>
-      <div class="header-actions">
-        <button
-          id="print-button"
-          class="icon-button"
-          type="button"
-          aria-label="Print or save as PDF"
-          title="Print or save as PDF"
-        >
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2M6 14h12v7H6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
-          </svg>
-        </button>
-        <button
-          id="theme-toggle"
-          class="icon-button"
-          type="button"
-          aria-label="Switch to dark mode"
-          title="Switch to dark mode"
-        >
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden>
-            <circle cx="12" cy="12" r="4" fill="currentColor" />
-            <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          </svg>
-        </button>
+      <div class="header-bio">
+        <p>
+          I've spent the past 4 years building skills in mechanical engineering. Now, I want to help
+          build <span class="highlight">data systems</span> that help people like you get things done.
+          I'm all about <span class="highlight">simplifying workflows</span>, improving communication,
+          and finding solutions that work.
+        </p>
+        <p>
+          I hope you take a few minutes to view some of my projects below, and always feel free to
+          connect with me on
+          <a href="https://www.linkedin.com/in/ishaan-srivastava-78034918b/" target="_blank" rel="noopener noreferrer">LinkedIn</a> :)
+        </p>
       </div>
     </header>
 

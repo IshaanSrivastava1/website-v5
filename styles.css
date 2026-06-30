@@ -38,9 +38,15 @@ body {
 
 .header {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .avatar {
@@ -80,10 +86,27 @@ body {
   letter-spacing: -0.01em;
 }
 
-.header-text .bio {
-  margin: 0;
+.header-bio {
   color: var(--muted);
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 640px;
+}
+
+.header-bio p {
+  margin: 0;
+}
+
+.header-bio a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header-bio a:hover {
+  text-decoration: underline;
 }
 
 .highlight {
@@ -380,6 +403,10 @@ body {
 
 @media (max-width: 480px) {
   .header {
+    gap: 14px;
+  }
+
+  .header-top {
     gap: 14px;
   }
 
